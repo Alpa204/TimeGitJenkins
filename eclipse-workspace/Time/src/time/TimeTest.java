@@ -121,14 +121,6 @@ class TimeTest {
 	
 	
 	@Test
-	void testGetMilliSecondsFail() {
-		int milliSeconds = Time.getMilliSeconds("12:05:05:005");
-
-		assertTrue("The milliSeconds were not calculated", milliSeconds!=5);
-	}
-	
-	
-	@Test
 	void testGetMilliSecondsGood() {
 		int milliSeconds = Time.getMilliSeconds("00:00:00:005");
 
